@@ -11,7 +11,10 @@ app.use(express.static(join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
   console.log('rendering index');
-  res.render('index', { title : 'Home' });
+  res.render('index', {
+    title : 'Home',
+    analyticsId: '4xx-xxxxx'
+  });
 });
 
 var port = 3000;
