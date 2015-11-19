@@ -1,0 +1,1 @@
+var analyticsId = 'default-id';
