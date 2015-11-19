@@ -10,3 +10,9 @@ html
         block content
     footer
       p Running on node with Express and Jade
+    script.
+      // notice variable initialization happening
+      // right inside the template, meaning it runs
+      // inside the HTML page
+      var analyticsId = '#{analyticsId}';
+    script(src="analytics.js")
