@@ -1,6 +1,9 @@
 doctype
 html
   head
+    meta(
+      http-equiv="Content-Security-Policy",
+      content="default-src *; script-src http://127.0.0.1:* 'unsafe-eval'")
     title #{title} - Example
   body
     header
@@ -15,4 +18,4 @@ html
       // right inside the template, meaning it runs
       // inside the HTML page
       var analyticsId = '#{analyticsId}';
-    script(src="analytics.js")
+    script(src="js/analytics.js")
