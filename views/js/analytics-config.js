@@ -1,1 +1,3 @@
-var analyticsId = 'default-id';
+module.exports = {
+  analyticsId: 'default-id'
+};
