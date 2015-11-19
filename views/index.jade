@@ -13,3 +13,14 @@ block content
     | at nulla justo, eget luctus tortor.
 
   p Analytics id for this demo #{analyticsId}
+
+  p
+    input#source(value="alert('hi there')")
+    button#run Run code
+  script.
+    document.getElementById('run').addEventListener('click', function () {
+      var input = document.getElementById('source');
+      var source = input.value;
+      console.log('evaluating source "%s"', source);
+      eval(source);
+    });

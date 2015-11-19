@@ -5,6 +5,7 @@ var join = require('path').join;
 
 app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'jade');
+app.locals.pretty = true;
 
 app.use(morgan('dev'));
 app.use(express.static(join(__dirname, 'public')));
